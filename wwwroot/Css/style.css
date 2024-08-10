@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+a {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+h1 {
+    font-size: 26px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Titillium Web';
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Titillium Web';
+    font-weight: 400;
+}
+
+.nav-cabecalho {
+    background-color: #003d60;
+    padding: 1%;
+}
+
+.lista-cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elementos-cabecalho {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.lista-rodape {
+    display: flex;
+    justify-content: space-between;
+    background-color: #29C5BA;
+}
+
+.elementos-rodape {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 5% 2% 2% 0%;
+}
+
+.botao-play-store {
+    background-color: #29C5BA;
+    border: none;
+    color: white;
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5%;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+    .botao-play-store:hover {
+        background-color: #25b0a6;
+    }
+
+.botao-acesse-joinbike {
+    background-color: #12233B;
+    border: none;
+    color: white;
+    padding: 5%;
+    padding-right: 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5%;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+    .botao-acesse-joinbike:hover {
+        background-color: #162c4c;
+    }
