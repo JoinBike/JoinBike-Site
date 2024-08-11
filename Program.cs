@@ -1,3 +1,8 @@
+using JoinBike_SITE.Data;
+using JoinBike_SITE.Repositorio;
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+
 namespace JoinBike_SITE
 {
     public class Program
@@ -8,6 +13,15 @@ namespace JoinBike_SITE
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<BancoContext>(options =>
+            {
+                options.UseMySql(
+                    builder.Configuration.GetConnectionString("Database"),
+                    new MySqlServerVersion(new Version(8, 0, 21)) // Especifique a versão do seu servidor MySQL
+                );
+            });
+
+            builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>(); 
 
             var app = builder.Build();
 
@@ -28,7 +42,7 @@ namespace JoinBike_SITE
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=Index}");
 
             app.Run();
         }

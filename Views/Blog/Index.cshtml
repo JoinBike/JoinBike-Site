@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model UsuarioModel;
+
+<!DOCTYPE html>
 <html lang="Pt-br">
 <head>
     <meta charset="utf-8">
@@ -6,6 +8,17 @@
     <title>JoinBike - Blog</title>
 </head>
 <body>
+    <form asp-controller="Blog" asp-action="Criar" method="post">
+        <label>Nome</label>
+        <input type="text" asp-for="Nome" placeholder="Digite seu nome."/>
 
+        <label>Sobrenome</label>
+        <input type="text" asp-for="Sobrenome" placeholder="Digite seu sobrenome."/>
+
+        <label>Email</label>
+        <input type="email" asp-for="Email" placeholder="Digite seu email."/>
+
+        <button type="submit">Cadastrar</button>
+    </form>
 </body>
 </html>
