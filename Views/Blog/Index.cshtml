@@ -5,20 +5,59 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./Images/Logo-JoinBike.png" type="image/x-icon">
+
     <title>JoinBike - Blog</title>
 </head>
-<body>
-    <form asp-controller="Blog" asp-action="Criar" method="post">
-        <label>Nome</label>
-        <input type="text" asp-for="Nome" placeholder="Digite seu nome."/>
+<body style="background-color: #12233B;">
+    <header style="background-color: #EFF3FF;">
+        <nav>
+            <ul class="lista-cabecalho">
+                <div style="margin-left: 3%;">
+                    <a asp-controller="Home" asp-action="Index">
+                        <img src="./Images/Logo-JoinBike-2.png" alt="Logo"
+                             style="width: 100px; height: 60px;">
+                    </a>
+                </div>
 
-        <label>Sobrenome</label>
-        <input type="text" asp-for="Sobrenome" placeholder="Digite seu sobrenome."/>
+                <div class="elementos-cabecalho">
+                <li style="padding: 20px 10px 0px 0px">
+                    <a style="color: black;" asp-controller="Home" asp-action="Index">JoinBike</a>
+                </li>
+                <li style="padding: 20px 10px 0px 5px">
+                    <a style="color: black;" asp-controller="Contato" asp-action="Index">Contato</a>
+                </li>
+                <li style="padding: 20px 20px 0px 5px">
+                    <a style="color: black;" href="#">Download</a>
+                </li>
+                </div>
+            </ul>
+        </nav>
 
-        <label>Email</label>
-        <input type="email" asp-for="Email" placeholder="Digite seu email."/>
+        <hr>
 
-        <button type="submit">Cadastrar</button>
-    </form>
+        <h1 style="text-align: center; padding-top: 1%; padding-bottom: 2%;">BLOG DO <span style="color:#29C5BA;">JOINBIKE</span></h1>
+    </header>
+
+    <main style="background-color: #12233B; color: white;">
+
+        <form asp-controller="Blog" asp-action="Criar" method="post">
+            <label>Nome</label>
+            <input type="text" asp-for="Nome" placeholder="Digite seu nome." />
+
+            <label>Sobrenome</label>
+            <input type="text" asp-for="Sobrenome" placeholder="Digite seu sobrenome." />
+
+            <label>Email</label>
+            <input type="email" asp-for="Email" placeholder="Digite seu email." />
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+    </main>
+
+    <footer style="background-color: #12233B; color: white;">
+    </footer>
 </body>
 </html>

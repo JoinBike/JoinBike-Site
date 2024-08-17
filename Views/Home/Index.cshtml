@@ -15,20 +15,22 @@
         <nav class="nav-cabecalho">
             <ul class="lista-cabecalho">
                 <div style="margin-left: 3%;">
-                    <a asp-controller="Home" asp-action="Index"><img src="./Images/Logo-JoinBike.png" alt="Logo"
-                            style="width: 50px; height: 40px;"></a>
+                    <a asp-controller="Home" asp-action="Index">
+                        <img src="./Images/Logo-JoinBike.png" alt="Logo"
+                             style="width: 50px; height: 40px;">
+                    </a>
                 </div>
 
                 <div class="elementos-cabecalho">
-                    <li style="padding: 10px">
-                        <a asp-controller="Home" asp-action="Index">JoinBike</a>
-                    </li>
-                    <li style="padding: 10px">
+                <li style="padding: 10px">
                     <a asp-controller="Blog" asp-action="Index">Blog</a>
-                    </li>
-                    <li style="padding: 10px 10% 10px 10px">
+                </li>
+                <li style="padding: 10px">
                     <a asp-controller="Contato" asp-action="Index">Contato</a>
-                    </li>
+                </li>
+                <li style="padding: 10px 10px 10px 10px">
+                    <a href="#">Download</a>
+                </li>
                 </div>
             </ul>
 
@@ -43,8 +45,12 @@
 
             <div style="margin: 5%;">
                 <h3>Baixe o <strong>JoinBike</stong> agora mesmo!</h3>
-                <a href="#"> <button class="botao-play-store"><img style="width: 35px; height: 30px;"
-                            src="./Images/Google-Play-icon-logo.png" alt="Google play"> Google Play</button> </a>
+                <a href="#">
+                    <button class="botao-play-store">
+                        <img style="width: 35px; height: 30px;"
+                             src="./Images/Google-Play-icon-logo.png" alt="Google play"> Google Play
+                    </button>
+                </a>
             </div>
         </div>
     </header>
@@ -107,7 +113,8 @@
 
                     <br>
 
-                    <a href="#nossa-historia"> <button class="botao-acesse-joinbike">CONHEÇA NOSSA HISTÓRIA</button>
+                    <a href="#nossa-historia">
+                        <button class="botao-acesse-joinbike">CONHEÇA NOSSA HISTÓRIA</button>
                     </a>
                 </div>
                 <div>
@@ -117,32 +124,41 @@
         </section>
 
         <section id="baixar-app" style="background-color: #12233B; padding-top: 5%; padding-bottom: 5%;">
-            <h1 style="text-align: center; color: white;">5 PASSOS PARA APROVEITAR O APP <span
-                    style="color: #56F5FF;">JOINBIKE</span></h1>
+            <h1 style="text-align: center; color: white;">
+                5 PASSOS PARA APROVEITAR O APP <span style="color: #56F5FF;">JOINBIKE</span>
+            </h1>
 
-            <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; white-space: nowrap;">
                 <div style="padding: 5%; color: #EFF3FF; opacity: 95%;">
                     <p>BAIXE O JOINBIKE <span style="color: #56F5FF;">GRATUITAMENTE</span> NA SUA LOJA DE APPS.</p>
                     <br>
-                    <P>FAÇA O SEU <span style="color: #56F5FF;">CADASTRO</span> OU <span
-                            style="color: #56F5FF;">LOGIN</span> PARA ACESSAR OS PEDAIS.</P>
+                    <P>
+                        FAÇA O SEU <span style="color: #56F5FF;">CADASTRO</span> OU <span style="color: #56F5FF;">LOGIN</span> PARA ACESSAR OS PEDAIS.
+                    </P>
                     <br>
                     <P>ENCONTRE O PEDAL QUE MAIS COMBINA COM VOCÊ <span style="color: #56F5FF;">OU...</span></P>
                     <br>
                     <p>...CRIE O SEU PRÓPRIO <span style="color: #56F5FF;">PEDAL</span> E CONVIDE A COMUNIDADE.</p>
                     <br>
-                    <p>FAÇA NOVAS <span style="color: #56F5FF;">AMIZADES</span> E PEDALE COM MAIS <span
-                            style="color: #56F5FF;">SEGURANÇA</span>!</p>
+                    <p>
+                        FAÇA NOVAS <span style="color: #56F5FF;">AMIZADES</span> E PEDALE COM MAIS <span style="color: #56F5FF;">SEGURANÇA</span>!
+                    </p>
                 </div>
                 <div style="display: flex; flex-direction: column; margin-top: 5%;">
-                    <img style="width:200x; height: 200px;" src="./Images/imagem-4.png" alt="Celular-JoinBike">
-                    <a href="#"> <button class="botao-play-store"><img style="width: 35px; height: 30px;"
-                                src="./Images/Google-Play-icon-logo.png" alt="Google play"> Google Play</button> </a>
+                    <img style="width: 145px; height: 145px;" src="./Images/imagem-4.png" alt="Celular-JoinBike">
+                    <div style="display:flex; justify-content: center; margin-top: 10%;">
+                        <a href="#">
+                            <button class="botao-play-store">
+                                <img style="width: 35px; height: 30px;"
+                                     src="./Images/Google-Play-icon-logo.png" alt="Google play"> Google Play
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="seguranca" style="background-color: #0002FF;">
-            <div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center;">
+        <section id="seguranca" style="background-color: #0002FF; padding: 5%;">
+            <div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; white-space: nowrap;">
                 <div>
                     <h1 style="color: white;">COMPROMISSO COM A SUA <span style="color: #56F5FF;">SEGURANÇA</span></h1>
 
@@ -157,16 +173,20 @@
 
                 </div>
                 <div>
-                    <img style="width: 300px; height: 300px;" src="./Images/imagem-5.png" alt="Sinal de bike">
+                    <img style="width: 250px; height: 250px;" src="./Images/imagem-5.png" alt="Sinal de bike">
                 </div>
             </div>
             <div style="display: flex; justify-content: space-evenly; padding-top: 5%;">
-                <a href="#"> <img style="width: 100px; height: 100px;" src="./Images/Lock Shield.png" alt="Cadeado">
+                <a href="#">
+                    <img style="width: 100px; height: 100px;" src="./Images/Lock Shield.png" alt="Cadeado">
                 </a>
-                <a href="#"> <img style="width: 100px; height: 100px;" src="./Images/Vehicle Bicycle.png" alt="Bike">
+                <a href="#">
+                    <img style="width: 100px; height: 100px;" src="./Images/Vehicle Bicycle.png" alt="Bike">
                 </a>
-                <a href="#"> <img style="width: 100px; height: 100px;" src="./Images/Person Lock.png"
-                        alt="Pessoa segura"> </a>
+                <a href="#">
+                    <img style="width: 100px; height: 100px;" src="./Images/Person Lock.png"
+                         alt="Pessoa segura">
+                </a>
             </div>
         </section>
         <section id="nossa-historia">
@@ -187,11 +207,10 @@
                 </div>
             </div>
 
-            <div
-                style="background-color: #EFF3FF; display: flex; justify-content: space-evenly; align-items: center; padding: 5%;">
+            <div style="background-color: #EFF3FF; display: flex; justify-content: space-evenly; align-items: center; padding: 5%;">
                 <div>
                     <img style="width: 300px; height: 400px; padding-right: 20px;" src="./Images/imagem-7.png"
-                        alt="Kopp e Mioto">
+                         alt="Kopp e Mioto">
                 </div>
                 <div style="color: #12233B;">
                     <h1 style="text-align: center; margin-bottom: 5%;">A IDEIA</h1>
@@ -200,16 +219,16 @@
                     <p>queria fazer algo para que outros ciclistas não</p>
                     <p>passasem pelo mesmo que eu. Após um tempo, a</p>
                     <p>ideia de criar um app inovador para aumentar a</p>
-                    <p>segurança dos ciclistas surgiu e, com o apoio de</p>
+                    <p>segurança dos ciclistas surgiu, e com o apoio de</p>
                     <p>amigos e professores do Intituto Federal do</p>
+                    <p>Paraná, o desenvolvimento do nosso app começou."</p>
                     <span style="color: #216992;">-Gustavo Kopp</span>
                 </div>
             </div>
 
-            <div
-                style="background-color: #29C5BA; color: #12233B; display: flex; flex-direction: row; justify-content: space-around; padding: 5%;">
+            <div style="background-color: #29C5BA; color: #12233B; display: flex; flex-direction: row; justify-content: space-around; padding: 5%;">
                 <div>
-                    <h1 style="padding-bottom: 5%; white-space: nowrap;;">O 1º RECONHECIMENTO</h1>
+                    <h1 style="padding-bottom: 5%; white-space: nowrap;">O 1º RECONHECIMENTO</h1>
 
                     <p>Em dezembro de 2022, os alunos participantes do</p>
                     <p>projeto fizeram a primeira viagem de avião de suas</p>
@@ -223,18 +242,17 @@
                 </div>
                 <div>
                     <img style="width: 400px; height: 300px; margin-left: 5%;" src="./Images/imagem-8.png"
-                        alt="Apresentação do JoinBike">
+                         alt="Apresentação do JoinBike">
                     <h3 style="text-align: center; margin-top: 5%;"><a href="#"><u>SAIBA MAIS AQUI</u></a></h3>
                 </div>
             </div>
 
-            <div
-                style="background-color: #EFF3FF; color: #12233B; display: flex; flex-direction: row; flex-wrap: wrap; padding: 5%;">
+            <div style="background-color: #EFF3FF; color: #12233B; display: flex; flex-direction: row; flex-wrap: wrap; padding: 5%;">
                 <div style="padding: 2%;">
-                    <iframe width="690px" height="500px" src="https://www.youtube.com/embed/Q_BbYfOb700"
-                        title="Conheça o projeto JoinBike através da nossa 1° reportagem na Globo!" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="650px" height="500px" src="https://www.youtube.com/embed/Q_BbYfOb700"
+                            title="Conheça o projeto JoinBike através da nossa 1° reportagem na Globo!" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div style="padding: 2%;">
                     <h1>DO IF PARA HARVARD</h1>
@@ -255,9 +273,8 @@
     </main>
 
     <footer class="rodape">
-        <div
-            style="background-color: #29C5BA; color: #12233B; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; padding: 5%;">
-            <div>
+        <div style="background-color: #29C5BA; color: #12233B; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; padding: 5%;">
+            <div style="margin-bottom: 5%;">
                 <h1>ELOGIOS DE HARVARD</h1>
 
                 <br>
@@ -272,7 +289,11 @@
                 <p>bike. Veja ao lado o que ele falou sobre o JoinBike</p>
                 <p>durante um pedal pelos arredores de Boston.</p>
             </div>
-            <div style="display: flex; flex-direction: column; padding-top: 43px;">
+            <div style="display: flex; flex-direction: column;">
+
+                <iframe width="650" height="500" src="https://www.youtube.com/embed/Eu8Bji_f8uk" title="O que um professor de HARVARD tem a dizer sobre o App JoinBike?"
+                        frameborder="0" allow="accelerometer; autoplay;
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 <div style="display: flex; justify-content: center;">
                     <a href="#"> <button class="botao-acesse-joinbike">ACESSE O JOINBIKE AGORA MESMO!</button> </a>
@@ -281,20 +302,22 @@
         </div>
         <nav>
             <ul class="lista-rodape">
-                <div style="margin: 2% 0% 0% 0%;">
-                    <a href="index.html"><img src="./Images/Logo-JoinBike-2.png" alt="Logo"
-                            style="width: 140px; height: 100px;"></a>
+                <div style="margin: 3% 0% 0% 0%;">
+                    <a href="index.html">
+                        <img src="./Images/Logo-JoinBike-2.png" alt="Logo"
+                             style="width: 120px; height: px;">
+                    </a>
                 </div>
                 <div class="elementos-rodape">
-                    <li style="padding: 10px;">
-                        <a style="color: #12233B;" href="#">Download</a>
-                    </li>
-                    <li style="padding: 10px;">
+                <li style="padding: 10px;">
                     <a style="color: #12233B;" asp-controller="Blog" asp-action="Index">Blog</a>
-                    </li>
-                    <li style="padding: 10px 10% 10px 10px;">
+                </li>
+                <li style="padding: 10px;">
                     <a style="color: #12233B;" asp-controller="Contato" asp-action="Index">Contato</a>
-                    </li>
+                </li>
+                <li style="padding: 10px 10px 10px 10px;">
+                    <a style="color: #12233B;" href="#">Download</a>
+                </li>
                 </div>
             </ul>
         </nav>
